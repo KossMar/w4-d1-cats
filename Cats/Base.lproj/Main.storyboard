@@ -34,20 +34,31 @@
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ktC-Yh-Zec">
-                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ktC-Yh-Zec">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="30"/>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZZ-c3-8x5">
+                                                    <rect key="frame" x="0.0" y="30" width="50" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="ktC-Yh-Zec" secondAttribute="trailing" id="2oD-BP-Wc1"/>
+                                            <constraint firstItem="BZZ-c3-8x5" firstAttribute="top" secondItem="ktC-Yh-Zec" secondAttribute="bottom" id="BKz-If-cgh"/>
                                             <constraint firstItem="ktC-Yh-Zec" firstAttribute="leading" secondItem="QED-My-W09" secondAttribute="leading" id="IM2-0X-146"/>
+                                            <constraint firstItem="BZZ-c3-8x5" firstAttribute="leading" secondItem="QED-My-W09" secondAttribute="leading" id="L5O-it-hrK"/>
                                             <constraint firstItem="ktC-Yh-Zec" firstAttribute="top" secondItem="QED-My-W09" secondAttribute="top" id="Lj5-vC-ka8"/>
-                                            <constraint firstAttribute="bottom" secondItem="ktC-Yh-Zec" secondAttribute="bottom" id="dlU-TX-gh2"/>
+                                            <constraint firstAttribute="bottom" secondItem="BZZ-c3-8x5" secondAttribute="bottom" id="qt4-TO-aHi"/>
+                                            <constraint firstAttribute="trailing" secondItem="BZZ-c3-8x5" secondAttribute="trailing" id="sBZ-9s-SPH"/>
+                                            <constraint firstAttribute="bottom" secondItem="ktC-Yh-Zec" secondAttribute="bottom" constant="20" id="zHb-4Q-cPc"/>
                                         </constraints>
                                         <connections>
                                             <outlet property="imageView" destination="ktC-Yh-Zec" id="hQI-OZ-3X1"/>
+                                            <outlet property="label" destination="BZZ-c3-8x5" id="Vug-A7-LWj"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -72,7 +83,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-738" y="-4"/>
+            <point key="canvasLocation" x="-738.39999999999998" y="-4.0479760119940034"/>
         </scene>
     </scenes>
 </document>

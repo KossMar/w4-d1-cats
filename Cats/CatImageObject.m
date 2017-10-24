@@ -18,6 +18,7 @@
         _server = [info valueForKey:@"server"];
         _catImageId = [info valueForKey:@"id"];
         _secret = [info valueForKey:@"secret"];
+        _title = [info valueForKey:@"title"];
         _catImageStr = [NSString stringWithFormat:@"https://farm%@.staticflickr.com/%@/%@_%@.jpg", self.farm, self.server, self.catImageId, self.secret];
     }
     return self;

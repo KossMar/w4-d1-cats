@@ -29,7 +29,7 @@
 - (void)setupSmallLayout {
     CGFloat width = (self.view.frame.size.width / 3);
     self.smallLayout = [[UICollectionViewFlowLayout alloc] init];
-    self.smallLayout.itemSize = CGSizeMake(width, width);
+    self.smallLayout.itemSize = CGSizeMake(width, width + 20);
     self.smallLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
     self.smallLayout.minimumLineSpacing = 0;
     self.smallLayout.minimumInteritemSpacing = 0;
@@ -120,7 +120,7 @@
     
     MyCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"celId" forIndexPath:indexPath];
     CatImageObject *tempCatObject = [imagesArray objectAtIndex:indexPath.row];
-//    UIImage *catImage = [UIImage imageNamed:tempCatObject.catImageStr];
+    cell.label.text = tempCatObject.title;
     
     NSURL *url = [NSURL URLWithString:tempCatObject.catImageStr]; // 1
     

@@ -19,5 +19,6 @@
 @property (strong, nonatomic) NSString *catImageId;
 @property (strong, nonatomic) NSString *secret;
 @property (strong, nonatomic) NSString *catImageStr;
+@property (strong, nonatomic) NSString *title;
 
 @end
