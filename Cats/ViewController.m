@@ -31,7 +31,7 @@
     self.smallLayout = [[UICollectionViewFlowLayout alloc] init];
     self.smallLayout.itemSize = CGSizeMake(width, width + 20);
     self.smallLayout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0);
-    self.smallLayout.minimumLineSpacing = 0;
+    self.smallLayout.minimumLineSpacing = 10;
     self.smallLayout.minimumInteritemSpacing = 0;
     self.smallLayout.headerReferenceSize = CGSizeMake(CGRectGetWidth(self.myCollectionView.frame), 30);
     self.smallLayout.footerReferenceSize = CGSizeMake(CGRectGetWidth(self.myCollectionView.frame), 15);
